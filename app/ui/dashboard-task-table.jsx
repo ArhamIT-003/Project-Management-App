@@ -1,3 +1,4 @@
+"us client";
 import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
 
@@ -27,7 +28,7 @@ const rows = [
 
 const DashboardTaskTable = () => {
   return (
-    <div style={{ height: 400, width: '100%' }}>
+    <div style={{ height: 400, width: "100%" }}>
       <DataGrid
         rows={rows}
         columns={columns}
