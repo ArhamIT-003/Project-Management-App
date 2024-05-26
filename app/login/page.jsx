@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { MdLogin } from "react-icons/md";
 import React from "react";
-import { login } from "../lib/action";
 import LoginForm from "../ui/Login-Form";
 
 const LoginPage = () => {
@@ -17,7 +16,7 @@ const LoginPage = () => {
         </h2>
         <p>
           Don&apos;t have an account yet?{" "}
-          <Link href={"/signup"} className="text-blue-600 underline">
+          <Link href={"/auth/signup"} className="text-blue-600 underline">
             Sign-Up
           </Link>
         </p>

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    name: {
+    username: {
       type: String,
       min: 3,
       max: 20,
@@ -16,18 +16,8 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-
-    role: {
-      type: String,
-      required: true,
-    },
-    isActive: {
-      type: Boolean,
-    },
   },
   { timestamps: true }
 );
 
-const User = mongoose.models.User || mongoose.model("User", userSchema);
-
-export default User;
+export const User = mongoose.models?.User || mongoose.model("User", userSchema);

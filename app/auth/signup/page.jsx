@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { SiGnuprivacyguard } from "react-icons/si";
-import SignupForm from "../ui/Signup-Form";
+import SignupForm from "../../ui/Signup-Form";
 
 const SignUpPage = () => {
   return (
@@ -15,7 +15,7 @@ const SignUpPage = () => {
         </h2>
         <p className="text-center">
           Do you have an account?{" "}
-          <Link href={"/login"} className="text-blue-600 underline">
+          <Link href={"/auth/login"} className="text-blue-600 underline">
             Login
           </Link>
         </p>
